@@ -1,0 +1,67 @@
+@mixin shadow {
+  box-shadow: 4px 4px 10px lighten(grey, 20%);
+}
+
+@mixin restaurant_index_card {
+  background: $card-color;
+  width: 100%;
+  height: 300px;
+  margin-bottom: 32px;
+  border-radius: 32px;
+}
+
+@mixin menu_card {
+  background: $card-color;
+  height: 80px;
+  border-radius: 16px;
+}
+
+@mixin new_button {
+  background: $tertiary-color;
+  color: darken($tertiary-color, 30%);
+  padding: 8px;
+  margin-right: inherit;
+  border-radius: 3px;
+  border: none;
+  width: 80px;
+}
+
+@mixin gradient_heart {
+  padding: 0;
+  height: 30px;
+  color: transparent;
+  background-image: linear-gradient($primary-color, $secondary-color);
+  background-clip: text;
+  -webkit-background-clip: text;
+  opacity: 0;
+  transition: all 200ms ease-in-out;
+  &:hover {
+    opacity: 1;
+  }
+}
+
+@mixin gradient-disappear {
+  padding: 0;
+  height: 30px;
+  background-clip: text;
+  -webkit-background-clip: text;
+  opacity: 1;
+  transition: all 200ms ease-in-out;
+  &:hover {
+    opacity: 0;
+  }
+}
+
+@mixin faded_button {
+  padding: 20px 30px;
+  border-radius: 32px;
+  font-size: large;
+  border: none;
+  color: $text-color;
+  background: linear-gradient(350deg, #9356dc 30%, #ff79da 70%);
+  &:hover {
+    transition: transform 0.1s;
+    cursor: pointer;
+    opacity: 0.9;
+  }
+}
