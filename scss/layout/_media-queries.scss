@@ -1,0 +1,37 @@
+// Tablet Screen
+
+@media screen and (min-width: 800px) {
+  .choice {
+    width: 70%;
+    position: relative;
+    left: 15%;
+  }
+
+  .restaurants__cards {
+    display: grid;
+    grid: repeat(2, 300px) / auto-flow;
+    gap: 4rem;
+  }
+}
+
+// Desktop Screen
+
+@media screen and (min-width: 1200px) {
+  .choice {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    position: inherit;
+    gap: 2rem;
+  }
+
+  .restaurants__title {
+    padding-left: 15%;
+  }
+
+  .restaurants__cards {
+    width: 70%;
+    position: relative;
+    left: 15%;
+  }
+}

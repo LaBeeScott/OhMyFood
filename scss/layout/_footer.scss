@@ -1,0 +1,36 @@
+footer {
+  background: #363636;
+  color: $text-color;
+  text-align: start;
+  padding: 40px 32px 32px 32px;
+}
+
+footer .footer_logo {
+  height: 25px;
+  color: white;
+  font-family: "Shrikhand", cursive;
+  font-size: x-large;
+}
+
+footer ul li {
+  text-align: start;
+  margin-left: -40px;
+  padding-bottom: 10px;
+}
+
+footer a {
+  color: $text-color;
+}
+
+footer ul li i {
+  padding-right: 5px;
+}
+
+.fa-handshake-angle {
+  font-size: small;
+  margin-right: -5px;
+}
+
+.restaurant_add {
+  padding-left: 2.25px;
+}
