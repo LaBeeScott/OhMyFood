@@ -1,6 +1,6 @@
 // Tablet Screen
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 650px) {
   .choice {
     width: 70%;
     position: relative;
@@ -11,6 +11,18 @@
     display: grid;
     grid: repeat(2, 300px) / auto-flow;
     gap: 4rem;
+  }
+
+  .menu h3 {
+    padding-left: 20%;
+  }
+
+  .menu__sector {
+    padding-left: 20%;
+  }
+
+  .menu-part {
+    width: 70%;
   }
 }
 
@@ -33,5 +45,17 @@
     width: 70%;
     position: relative;
     left: 15%;
+  }
+
+  .menu h3 {
+    padding-left: 10%;
+  }
+
+  .menu__sector {
+    display: flex;
+    flex-direction: row;
+    padding-left: 0;
+    width: 90%;
+    padding-left: 10%;
   }
 }
