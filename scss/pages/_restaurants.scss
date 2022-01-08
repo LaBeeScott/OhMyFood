@@ -93,13 +93,20 @@
 }
 
 .menu-part {
+  @for $i from 1 through 4 {
+    &:nth-child(#{$i}) {
+      animation-delay: 100ms * $i;
+    }
+  }
   @include menu_card;
   @include shadow;
   display: flex;
-  margin: 0 16px 32px 16px;
+  margin: 0 16px 8px 16px;
   align-items: center;
   padding: 0 0 0 10px;
   overflow: hidden;
+  animation: menu-load 1s both;
+  animation-delay: 2s !important;
   &__description {
     overflow: hidden;
     text-overflow: ellipsis;
@@ -156,4 +163,15 @@
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+}
+
+@keyframes menu-load {
+  0% {
+    transform: translateY(50%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
