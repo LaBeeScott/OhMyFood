@@ -45,7 +45,6 @@ footer ul li i {
 
 body {
   margin: 0;
-  min-width: 500px;
 }
 
 #logo {
@@ -521,9 +520,9 @@ a {
   }
 
   .restaurants__cards {
-    display: grid;
-    grid: repeat(2, 300px)/auto-flow;
+    width: 60%;
     gap: 4rem;
+    margin: auto;
   }
 
   .menu h3 {
@@ -553,8 +552,7 @@ a {
 
   .restaurants__cards {
     width: 70%;
-    position: relative;
-    left: 15%;
+    margin: auto;
   }
 
   .menu h3 {
