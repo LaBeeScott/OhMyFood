@@ -95,7 +95,7 @@
 .menu-part {
   @for $i from 1 through 4 {
     &:nth-child(#{$i}) {
-      animation-delay: 100ms * $i;
+      animation-delay: 200ms * $i;
     }
   }
   @include menu_card;

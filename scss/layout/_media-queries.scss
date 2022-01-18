@@ -1,10 +1,23 @@
+// Phone Screen
+
+@media screen and (max-width: 425px) {
+  .order i {
+    padding: 0 2%;
+    margin: 0;
+  }
+}
+
 // Tablet Screen
 
 @media screen and (min-width: 650px) {
   .choice {
-    width: 70%;
     position: relative;
-    left: 15%;
+  }
+
+  .steps {
+    max-width: 370px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .restaurants__cards {
